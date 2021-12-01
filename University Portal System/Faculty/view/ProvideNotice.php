@@ -45,14 +45,14 @@ if(isset($_SESSION['username']))
 
 <div class="w3-container w3-dark-white" style="margin-top:50px">
 
-  <form class="loginbox" onclick="return validation()" method="post" action="../controller/ProvideNotice.php">
+  <form class="loginbox" onclick="" method="post" action="../controller/ProvideNotice.php">
 
 
-    <p>TITLE:</p><br> <input type="text" name="title" id="title" placeholder="TITLE">
+    <p>TITLE:</p><br> <input type="text" name="TITLE" id="title" placeholder="TITLE">
     <br><br>
     <span class="error" id="titleErr">* <?php if(!empty($_GET['titleErr'])){echo $_GET['titleErr'];} ?></span>
     <br>
-    <p>DESCRIPTION:</p><br> <input type="text" name="body" id="body" placeholder="DESCRIPTION">
+    <p>DESCRIPTION:</p><br> <input type="text" name="DESCRIPTION" id="body" placeholder="DESCRIPTION">
     <br><br>
     <span class="error" id="bodyErr">* <?php if(!empty($_GET['bodyErr'])){echo $_GET['bodyErr'];} ?></span>
     <br>

@@ -12,7 +12,8 @@ if (isset($_POST['submit'])) {
 
 
 
-  $title = $body = "";
+  $title =$_POST["TITLE"];
+   $body = $_POST["DESCRIPTION"];
 
  $flag=1;
  function test_input($data) {
@@ -23,7 +24,7 @@ if (isset($_POST['submit'])) {
  }
 
   if (empty($_POST["TITLE"])) {
-    $packingErr= "TITLE is required";
+    $titleErr= "TITLE is required";
     $flag=0;
   } else {
 
@@ -32,7 +33,7 @@ if (isset($_POST['submit'])) {
   }
 
   if (empty($_POST["DESCRIPTION"])) {
-    $bodyErr= "DESCRIPTION number is required";
+    $bodyErr= "DESCRIPTION is required";
     $flag=0;
   } else {
 
@@ -69,7 +70,7 @@ else {
    
 
 );
-     header("location:../view/report.php?" . http_build_query($args));
+     header("location:../view/ProvideNotice.php?" . http_build_query($args));
   }
 
 }else {

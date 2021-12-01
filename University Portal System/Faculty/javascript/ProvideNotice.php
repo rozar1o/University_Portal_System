@@ -2,14 +2,14 @@
 
 function validation()
 {
-  var name= document.getElementById("TITLE");
-  var email= document.getElementById("DESCRIPTION");
+  var title= document.getElementById("TITLE");
+  var body= document.getElementById("DESCRIPTION");
   
 
 
   //alert("hello");
 
-  if(packing.value.trim()=="" )
+  if(title=="" )
   {
      document.getElementById("titleErr").innerHTML= "*TITLE is requied";
      return false;
@@ -20,7 +20,7 @@ function validation()
   }
 
 
-  if(packet.value.trim()=="")
+  if(body=="")
   {
     document.getElementById("bodyErr").innerHTML= "*DESCRIPTION is requied";
     return false;
@@ -41,8 +41,8 @@ return true;
 
 function checkTitle()
 {
-  var packing= document.getElementById("TITLE");
-  if(packing.value.trim()=="" )
+  var title= document.getElementById("TITLE");
+  if(title=="" )
   {
      document.getElementById("titleErr").innerHTML= "*TITLE is requied";
      return false;
@@ -55,8 +55,8 @@ function checkTitle()
 
 function checkBody()
 {
-  var packet= document.getElementById("DESCRIPTION");
-  if(packet.value.trim()=="")
+  var body= document.getElementById("DESCRIPTION");
+  if(body=="")
   {
     document.getElementById("bodyErr").innerHTML= "*DESCRIPTION is requied";
     return false;

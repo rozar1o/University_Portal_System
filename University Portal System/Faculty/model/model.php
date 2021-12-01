@@ -67,14 +67,14 @@ function searchUsername($username){
 
 function provideNotice($data){
 	$conn = db_conn();
-    $selectQuery = "INSERT into providenotice (TITLE,BODY)
+    $selectQuery = "INSERT into providenotice (TITLE,DESCRIPTION)
 VALUES (:title,:body)";
     try{
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
         	
-        	':title' => $data['title'],
-					':body' => $data['body'],
+        	':title' => $data['TITLE'],
+					':body' => $data['DESCRIPTION'],
 					
 
           ]);

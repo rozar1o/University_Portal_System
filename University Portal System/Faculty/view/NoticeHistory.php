@@ -56,7 +56,7 @@ if(isset($_SESSION['username']))
   <div class="form-group">
     <div class="input-group">
       <span class="input-group-addon">Search</span>
-      <input type="text" name="search_text" id="search_text" placeholder="Search by student ID" class="form-control" />
+      <input type="text" name="search_text" id="search_text" placeholder="Search by date" class="form-control" />
     </div>
   </div>
   <br />
